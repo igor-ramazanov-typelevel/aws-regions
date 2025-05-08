@@ -1,5 +1,5 @@
 val scala213Version = "2.13.16"
-val scala3Version = "3.3.5"
+val scala3Version = "3.3.6"
 
 inThisBuild(
   Seq(
