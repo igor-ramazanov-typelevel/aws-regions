@@ -79,11 +79,11 @@ lazy val circe = crossProject(JVMPlatform, JSPlatform, NativePlatform)
   )
   .dependsOn(core)
 
-lazy val ciris = crossProject(JVMPlatform, JSPlatform)
+lazy val ciris = crossProject(JVMPlatform, JSPlatform, NativePlatform)
   .in(file("modules/ciris"))
   .settings(
     name := "aws-regions-ciris",
-    libraryDependencies += "is.cir" %%% "ciris" % "3.8.0",
+    libraryDependencies += "is.cir" %%% "ciris" % "3.9.0-M1",
     publishTo := githubPublishTo.value,
     publishConfiguration := publishConfiguration.value.withOverwrite(true),
     publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(true)
